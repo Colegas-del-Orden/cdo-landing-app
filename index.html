@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Descargá la app oficial de Colegas del Orden. Disponible para iOS y Android." />
+  <meta property="og:title" content="Colegas del Orden — App Móvil" />
+  <meta property="og:description" content="Gestiona tu comunidad desde tu móvil." />
+  <meta property="og:url" content="https://colegasdelorden.com/app" />
+  <title>Colegas del Orden — Descargá la App</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ─────────────────────────────────── -->
+  <header class="header">
+    <a href="https://colegasdelorden.com" class="header-brand">
+      <div class="header-logo">🔒</div>
+      <span class="header-name">Colegas del Orden</span>
+    </a>
+    <a href="https://colegasdelorden.com" class="header-link">← Volver al sitio</a>
+  </header>
+
+  <!-- ── HERO ───────────────────────────────────── -->
+  <section class="hero">
+    <p class="hero-badge">📱 App Oficial</p>
+    <h1>Tu comunidad,<br>siempre en tu bolsillo</h1>
+    <p>Descargá la app oficial de Colegas del Orden y gestioná tu comunidad desde cualquier lugar.</p>
+
+    <div class="download-buttons">
+
+      <!-- TODO: reemplazar con URL real de App Store -->
+      <a
+        href="https://apps.apple.com/app/colegas-del-orden/idMOCK123456"
+        class="btn-store"
+        id="btn-ios"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Descargar en App Store"
+      >
+        <span class="btn-store-icon"></span>
+        <span class="btn-store-text">
+          <small>Disponible en</small>
+          <strong>App Store</strong>
+        </span>
+      </a>
+
+      <!-- TODO: reemplazar con URL real de Google Play -->
+      <a
+        href="https://play.google.com/store/apps/details?id=com.colegasdelorden.app"
+        class="btn-store"
+        id="btn-android"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Descargar en Google Play"
+      >
+        <span class="btn-store-icon">▶</span>
+        <span class="btn-store-text">
+          <small>Disponible en</small>
+          <strong>Google Play</strong>
+        </span>
+      </a>
+
+    </div>
+
+    <!-- Mockup del teléfono -->
+    <div class="phone-mockup" aria-hidden="true">
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <span>🔒</span>
+          <span>Colegas del Orden</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ───────────────────────────────── -->
+  <section class="features">
+    <h2 class="section-title">¿Qué podés hacer con la app?</h2>
+    <p class="section-subtitle">Todo lo que necesitás para tu comunidad, en un solo lugar.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">📋</span>
+        <h3>Gestión de incidencias</h3>
+        <p>Registrá y hacé seguimiento de incidencias de tu comunidad de forma rápida y sencilla.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">💬</span>
+        <h3>Comunicación directa</h3>
+        <p>Chateá con los miembros de tu comunidad y recibí notificaciones en tiempo real.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📅</span>
+        <h3>Turnos y reservas</h3>
+        <p>Organizá turnos, reservas de espacios comunes y eventos desde la palma de tu mano.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🔔</span>
+        <h3>Alertas al instante</h3>
+        <p>Recibí avisos importantes de tu comunidad al instante, sin perderte nada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA FINAL ───────────────────────────────── -->
+  <section class="cta">
+    <h2>¿Listo para empezar?</h2>
+    <p>Unite a la comunidad y descargá la app hoy.</p>
+
+    <div class="download-buttons">
+
+      <!-- TODO: reemplazar con URL real de App Store -->
+      <a
+        href="https://apps.apple.com/app/colegas-del-orden/idMOCK123456"
+        class="btn-store"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="btn-store-icon"></span>
+        <span class="btn-store-text">
+          <small>Disponible en</small>
+          <strong>App Store</strong>
+        </span>
+      </a>
+
+      <!-- TODO: reemplazar con URL real de Google Play -->
+      <a
+        href="https://play.google.com/store/apps/details?id=com.colegasdelorden.app"
+        class="btn-store"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="btn-store-icon">▶</span>
+        <span class="btn-store-text">
+          <small>Disponible en</small>
+          <strong>Google Play</strong>
+        </span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────── -->
+  <footer class="footer">
+    <p>© 2026 <a href="https://colegasdelorden.com">Colegas del Orden</a> — Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Detectar plataforma y resaltar botón correspondiente -->
+  <script>
+    (function () {
+      var ua = navigator.userAgent || '';
+      var isIOS = /iPad|iPhone|iPod/.test(ua);
+      var isAndroid = /Android/.test(ua);
+      if (isIOS) {
+        document.getElementById('btn-ios').classList.add('btn-highlighted');
+      } else if (isAndroid) {
+        document.getElementById('btn-android').classList.add('btn-highlighted');
+      }
+    })();
+  </script>
+
+</body>
+</html>
