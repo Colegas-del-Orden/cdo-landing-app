@@ -15,7 +15,9 @@
   <!-- ── HEADER ─────────────────────────────────── -->
   <header class="header">
     <a href="https://colegasdelorden.com" class="header-brand">
-      <div class="header-logo">🔒</div>
+      <div class="header-logo">
+        <img src="img/logo_cdo.png" alt="Colegas del Orden" width="40" height="40" />
+      </div>
       <span class="header-name">Colegas del Orden</span>
     </a>
     <a href="https://colegasdelorden.com" class="header-link">← Volver al sitio</a>
@@ -24,8 +26,8 @@
   <!-- ── HERO ───────────────────────────────────── -->
   <section class="hero">
     <p class="hero-badge">📱 App Oficial</p>
-    <h1>Tu comunidad,<br>siempre en tu bolsillo</h1>
-    <p>Descargá la app oficial de Colegas del Orden y gestioná tu comunidad desde cualquier lugar.</p>
+    <h1>Tu camino al orden,<br>siempre en tu bolsillo</h1>
+    <p>Descargá la app oficial de Colegas del Orden y accedé a contenidos exclusivos desde cualquier lugar.</p>
 
     <div class="download-buttons">
 
@@ -38,7 +40,9 @@
         rel="noopener noreferrer"
         aria-label="Descargar en App Store"
       >
-        <span class="btn-store-icon"></span>
+        <span class="btn-store-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.18 1.35-2.16 3.99.03 3.16 2.59 4.22 2.62 4.23l-.01.04c-.19.65-.49 1.56-1.2 2.45M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        </span>
         <span class="btn-store-text">
           <small>Disponible en</small>
           <strong>App Store</strong>
@@ -54,7 +58,9 @@
         rel="noopener noreferrer"
         aria-label="Descargar en Google Play"
       >
-        <span class="btn-store-icon">▶</span>
+        <span class="btn-store-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3.18 23.76c.3.17.65.19.98.07l12.08-6.96-2.61-2.61-10.45 9.5zM.54 1.18C.2 1.54 0 2.1 0 2.82v18.36c0 .72.2 1.28.54 1.63l.08.08 10.28-10.28v-.24L.62 1.1l-.08.08zM20.12 10.5l-2.9-1.67-2.93 2.93 2.93 2.93 2.93-1.69c.83-.48.83-1.26-.03-1.5zM3.18.24L15.25 7.2l-2.61 2.61L2.2.31C2.52.19 2.88.21 3.18.38z"/></svg>
+        </span>
         <span class="btn-store-text">
           <small>Disponible en</small>
           <strong>Google Play</strong>
@@ -63,12 +69,24 @@
 
     </div>
 
-    <!-- Mockup del teléfono -->
-    <div class="phone-mockup" aria-hidden="true">
+    <!-- Mockup del teléfono con slider -->
+    <div class="phone-mockup">
       <div class="phone-frame">
         <div class="phone-screen">
-          <span>🔒</span>
-          <span>Colegas del Orden</span>
+          <div class="phone-slider" id="phoneSlider">
+            <div class="phone-slides" id="phoneSlides">
+              <div class="phone-slide"><img src="img/screenshots/home1.png" alt="Home" /></div>
+              <div class="phone-slide"><img src="img/screenshots/home2.png" alt="Home 2" /></div>
+              <div class="phone-slide"><img src="img/screenshots/home3.png" alt="Home 3" /></div>
+              <div class="phone-slide"><img src="img/screenshots/blog1.png" alt="Blog" /></div>
+            </div>
+          </div>
+          <div class="phone-dots" id="phoneDots">
+            <span class="phone-dot active"></span>
+            <span class="phone-dot"></span>
+            <span class="phone-dot"></span>
+            <span class="phone-dot"></span>
+          </div>
         </div>
       </div>
     </div>
@@ -77,28 +95,28 @@
   <!-- ── FEATURES ───────────────────────────────── -->
   <section class="features">
     <h2 class="section-title">¿Qué podés hacer con la app?</h2>
-    <p class="section-subtitle">Todo lo que necesitás para tu comunidad, en un solo lugar.</p>
+    <p class="section-subtitle">Todo el contenido y la comunidad de Colegas del Orden, en la palma de tu mano.</p>
 
     <div class="features-grid">
       <div class="feature-card">
-        <span class="feature-icon">📋</span>
-        <h3>Gestión de incidencias</h3>
-        <p>Registrá y hacé seguimiento de incidencias de tu comunidad de forma rápida y sencilla.</p>
+        <span class="feature-icon">✨</span>
+        <h3>Contenido diario deslizable</h3>
+        <p>Cada día recibís hasta 3 tarjetas con frases motivacionales, videos e imágenes. Deslizalas y compartí las que más te inspiren directamente desde la app.</p>
       </div>
       <div class="feature-card">
-        <span class="feature-icon">💬</span>
-        <h3>Comunicación directa</h3>
-        <p>Chateá con los miembros de tu comunidad y recibí notificaciones en tiempo real.</p>
+        <span class="feature-icon">🎥</span>
+        <h3>Eventos y webinars</h3>
+        <p>Inscribite al próximo evento con un tap. Cuando llega el día, aparece el botón para unirte al webinar y podés agregar el evento a tu calendario con un toque.</p>
       </div>
       <div class="feature-card">
-        <span class="feature-icon">📅</span>
-        <h3>Turnos y reservas</h3>
-        <p>Organizá turnos, reservas de espacios comunes y eventos desde la palma de tu mano.</p>
+        <span class="feature-icon">📖</span>
+        <h3>Acceso completo al Blog</h3>
+        <p>Explorá todos los artículos con carga automática, imágenes de portada y etiquetas. El contenido se muestra completo dentro de la app, sin abrir el navegador.</p>
       </div>
       <div class="feature-card">
-        <span class="feature-icon">🔔</span>
-        <h3>Alertas al instante</h3>
-        <p>Recibí avisos importantes de tu comunidad al instante, sin perderte nada.</p>
+        <span class="feature-icon">🛍️</span>
+        <h3>Productos y recursos</h3>
+        <p>Accedé a la vitrina de recursos de la comunidad: un producto destacado y una lista completa con enlaces directos, disponible desde el inicio o el menú.</p>
       </div>
     </div>
   </section>
@@ -117,7 +135,9 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span class="btn-store-icon"></span>
+        <span class="btn-store-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.18 1.35-2.16 3.99.03 3.16 2.59 4.22 2.62 4.23l-.01.04c-.19.65-.49 1.56-1.2 2.45M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        </span>
         <span class="btn-store-text">
           <small>Disponible en</small>
           <strong>App Store</strong>
@@ -131,7 +151,9 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span class="btn-store-icon">▶</span>
+        <span class="btn-store-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3.18 23.76c.3.17.65.19.98.07l12.08-6.96-2.61-2.61-10.45 9.5zM.54 1.18C.2 1.54 0 2.1 0 2.82v18.36c0 .72.2 1.28.54 1.63l.08.08 10.28-10.28v-.24L.62 1.1l-.08.08zM20.12 10.5l-2.9-1.67-2.93 2.93 2.93 2.93 2.93-1.69c.83-.48.83-1.26-.03-1.5zM3.18.24L15.25 7.2l-2.61 2.61L2.2.31C2.52.19 2.88.21 3.18.38z"/></svg>
+        </span>
         <span class="btn-store-text">
           <small>Disponible en</small>
           <strong>Google Play</strong>
@@ -145,6 +167,56 @@
   <footer class="footer">
     <p>© 2026 <a href="https://colegasdelorden.com">Colegas del Orden</a> — Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Slider JS -->
+  <script>
+    (function () {
+      const slides  = document.getElementById('phoneSlides');
+      const dots    = document.querySelectorAll('.phone-dot');
+      const total   = dots.length;
+      let current   = 0;
+      let startX    = 0;
+      let isDragging = false;
+      let autoTimer;
+
+      function goTo(index) {
+        current = (index + total) % total;
+        slides.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((d, i) => d.classList.toggle('active', i === current));
+      }
+
+      function next() { goTo(current + 1); }
+
+      function startAuto() {
+        clearInterval(autoTimer);
+        autoTimer = setInterval(next, 3000);
+      }
+
+      // Dots
+      dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); startAuto(); }));
+
+      // Touch / pointer swipe
+      const slider = document.getElementById('phoneSlider');
+
+      slider.addEventListener('pointerdown', e => {
+        startX = e.clientX;
+        isDragging = true;
+        clearInterval(autoTimer);
+      });
+
+      slider.addEventListener('pointerup', e => {
+        if (!isDragging) return;
+        isDragging = false;
+        const diff = startX - e.clientX;
+        if (Math.abs(diff) > 30) diff > 0 ? next() : goTo(current - 1);
+        startAuto();
+      });
+
+      slider.addEventListener('pointercancel', () => { isDragging = false; startAuto(); });
+
+      startAuto();
+    })();
+  </script>
 
   <!-- Detectar plataforma y resaltar botón correspondiente -->
   <script>
